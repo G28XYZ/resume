@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./pages/index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Резюме</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Aleksandr Kucherenko</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor01"
+            aria-controls="navbarColor01"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor01">
+            <ul class="navbar-nav me-auto" id="my-nav">
+              <li class="nav-item">
+                <a class="nav-link active" href="#"
+                  >Обо мне
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Навыки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Портфолио</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="content">
+      <section class="about container">
+        <div class="row">
+          <div class="col-sm-2">
+            <div class="card">
+              <img class="about__image" src="./images/main_bg.jpeg" alt="" />
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card">
+              <div class="card-header">Обо мне</div>
+              <div class="card-body">
+                <h5 class="card-title">Добрый день, меня зовут Александр</h5>
+                <p class="card-text">
+                  мне <span class="age"></span>. Женат. В 2014 году очно окончил Томский
+                  политехнический университет (ТПУ), института кибернетики (ИК) по специальности -
+                  технология и автоматизация машиностроительных производств (ТАМП), магистр. После
+                  учёбы устроился на работу в Томске по вакансии - программист-оператор на станки с
+                  ЧПУ токарной и фрезерной группы, на нефтегазовую компанию по ремонту погружного
+                  оборудования ( ООО "БРПО" ). Проработал 4 года. В 2018 году уволился по
+                  собственному желанию в связи с переездом в другой город - Новосибирск. В
+                  Новосибирск переехал так как в этом городе имеется своё жильё, а ещё как косвенная
+                  причина переезда - пробовать развиваться в более развитом городе. В Новосибирске
+                  устроился на работу по вакансии инженер-конструктор в производственную компанию -
+                  производство станков ТПА и пресс-форм к ним и нестандартного оборудования (ООО ПК
+                  "Экслюзив-Ново"). Работаю в настоящее время. В апреле 2019 года, чётко решил для
+                  себя, что хочу погрузиться в IT технологии, программирование. IT для меня всегда
+                  было интересно. И вот уже 1.5 года, практически, всё свободное время вкладываю в
+                  самообразование изучении языков программирования и IT технологий в целом.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./pages/index.js"></script>
+  </body>
+</html>
