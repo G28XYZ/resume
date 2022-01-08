@@ -1,0 +1,10 @@
+.portfolio__image {
+  width: 100%;
+  min-height: 380px;
+}
+
+.portfolio__image:hover {
+  transform: scale(1.05);
+  transition: transform 1s;
+  cursor: pointer;
+}
