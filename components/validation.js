@@ -7,7 +7,9 @@ export default class FormValidator {
     this._errorClass = "invalid-feedback";
     this._accessClass = "valid-feedback";
     this._form = form;
-    this._inputList = Array.from(this._form.querySelectorAll(this._inputSelector)).slice(0, 2);
+    this._allInputs = Array.from(this._form.querySelectorAll(this._inputSelector));
+    this._inputList = this._allInputs.slice(0, 2);
+    this._textArea = this._allInputs.slice(-1);
     this._submitButton = this._form.querySelector(this._submitButtonSelector);
   }
 
@@ -63,8 +65,30 @@ export default class FormValidator {
     }
   };
 
+  _sendMessage = () => {
+    const [name, email, text] = this._allInputs.map((i) => i.value);
+    mandrill(
+      "/messages/send",
+      {
+        message: {
+          to: [{ email: "g28xyz@ya.ru", name: name }],
+          from_email: email,
+          subject: "From resume",
+          text: text,
+        },
+      },
+      function (error, response) {
+        //uh oh, there was an error
+        if (error) console.log(JSON.stringify(error));
+        //everything's good, lets see what mandrill said
+        else console.log(response);
+      }
+    );
+    this._form.reset();
+  };
+
   _setEventListeners() {
-    this._formSubmit;
+    this._submitButton.addEventListener("click", this._sendMessage);
     this._inputList.forEach((input) =>
       input.addEventListener("input", () => {
         this._toggleButton();

@@ -1,6 +1,7 @@
 .portfolio__image {
   width: 100%;
-  min-height: 380px;
+  max-height: 320px;
+  height: 100%;
 }
 
 .portfolio__image:hover {
