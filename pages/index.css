@@ -4,3 +4,5 @@
 
 @import url(../blocks/about/about.css);
 @import url(../blocks/about/__image/about__image.css);
+
+@import url(../blocks/skills/skills.css);
