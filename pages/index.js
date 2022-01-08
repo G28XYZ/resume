@@ -1,8 +1,13 @@
 import { age, declination } from "../utils/calcAge.js";
+import modal from "../components/modal.js";
+
 // возраст
 document.querySelector(".age").textContent = age + " " + declination;
 
-const span = '<span class="visually-hidden">(current)</span>';
+const portfolioImages = document.querySelectorAll(".portfolio__image");
+portfolioImages.forEach((image) => {
+  image.addEventListener("click", () => modal(image));
+});
 
 function toggleNavItem() {
   triggerTabList.forEach((item) => item.classList.remove("active"));
