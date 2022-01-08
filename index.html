@@ -67,7 +67,7 @@
                   мне <span class="age"></span>. Женат. В 2014 году очно окончил Томский
                   политехнический университет (ТПУ), института кибернетики (ИК) по специальности -
                   технология и автоматизация машиностроительных производств (ТАМП), магистр.<br />После
-                  учёбы устроился на работу в Томске по вакансии - программист-оператор на станки с
+                  учёбы устроился на работу в Томске по вакансии - программист-оператор станков с
                   ЧПУ токарной и фрезерной группы, на нефтегазовую компанию по ремонту погружного
                   оборудования ( ООО "БРПО" ). Проработал 4 года. В 2018 году уволился по
                   собственному желанию в связи с переездом в другой город - Новосибирск. В
@@ -85,7 +85,7 @@
                   и других информационных технологий, для себя посчитал, что просто знать о новинках и что-есть-что
                   среди, например, программного обеспечения на ПК, и его комплектующих - мне
                   недостаточно. В какой то момент захотелось детальнее и углубленно начать изучать,
-                  в особенности программное обеспечение, программирование. Применение находил в
+                  в особенности - программное обеспечение, программирование. Применение находил в
                   прикладных задачах для себя:
                   <ul>
                     <li>автоматизирование расчётов по алгоритмам </li>
@@ -173,7 +173,38 @@
         
       </section>
       <section class='contacts container' id="contacts">
-        <div class="col">
+        <div class="card">
+          <div class="card-body">
+              <form class="form col row">
+                <div class="col-sm-4">
+                  <div class="mb-3 input-name">
+                    <label for="validationDefault01" class="form-label">Ваше имя</label>
+                    <input name="name" type="text" class="form-control" id="validationDefault01" placeholder="Имя" minlength="2" maxlength="25" required >
+                    <div class="valid-feedback">
+                      Ok
+                    </div>
+                    <div class="invalid-feedback" id="name">
+                    </div>
+                  </div>
+                  <div class="mb-3 input-email">
+                    <label for="validationDefault02" class="form-label">Укажите e-mail</label>
+                    <input name="email" type="email" class="form-control" id="validationDefault02" placeholder="name@example.com" required>
+                    <div class="valid-feedback">
+                      Ok
+                    </div>
+                    <div class="invalid-feedback" id="email">
+                    </div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Введи текст сообщения</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <button class="btn btn-success form-submit" disabled>Отправить</button>
+                </div>
+              </form>
+          </div>
         </div>
       </section>
       <footer class="footer"></footer>

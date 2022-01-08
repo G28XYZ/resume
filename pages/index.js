@@ -1,6 +1,11 @@
 import { age, declination } from "../utils/calcAge.js";
 import modal from "../components/modal.js";
+import FormValidation from "../components/validation.js";
 
+const form = document.querySelector(".form");
+
+const fromValidation = new FormValidation(form);
+fromValidation.enableValidation();
 // возраст
 document.querySelector(".age").textContent = age + " " + declination;
 
