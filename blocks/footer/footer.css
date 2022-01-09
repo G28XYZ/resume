@@ -1,3 +1,9 @@
 .footer {
-  padding-top: 100px;
+  display: flex;
+  color: white;
+  justify-content: flex-end;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  background-color: rgb(65, 59, 59);
 }

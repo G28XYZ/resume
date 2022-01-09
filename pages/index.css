@@ -12,8 +12,11 @@
 
 @import url(../blocks/contacts/contacts.css);
 
-@import url(../blocks/footer/footer.css);
-
 @import url(../blocks/modal/modal.css);
 
 @import url(../blocks/form/form.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__image/footer__image.css);
+@import url(../blocks/footer/__links-list/footer__links-list.css);
+@import url(../blocks/footer/__list/footer__list.css);
