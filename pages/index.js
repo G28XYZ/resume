@@ -12,10 +12,11 @@ function toggleNavItem() {
   triggerTabList.forEach((item) => item.classList.remove("active"));
 }
 
+const triggerTabList = [].slice.call(document.querySelectorAll("#my-nav a"));
+
 triggerTabList.forEach(function (triggerEl) {
   triggerEl.addEventListener("click", function (e) {
     toggleNavItem();
-    e.preventDefault();
     e.target.classList.add("active");
     window.scrollBy({
       behavior: "smooth",
