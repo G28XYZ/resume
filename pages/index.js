@@ -3,6 +3,9 @@ import modal from "../components/modal.js";
 // возраст
 document.querySelector(".age").textContent = age + " " + declination;
 
+// опыт
+document.querySelector("#experience").textContent = "менее года";
+
 const portfolioImages = document.querySelectorAll(".portfolio__image");
 portfolioImages.forEach((image) => {
   image.addEventListener("click", () => modal(image));
